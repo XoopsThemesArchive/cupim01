@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="Copyright(c) 1997-2004 <b>OCEAN-NET</b> All Rights Reserved. $Id: theme.html,v 1.2 2004/11/10 18:57:09 mikhail Exp $ - XOOPS BRASIL - Licence: GNU" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+
+<div style="border-right:6px groove #CCCCCC; border-bottom:6px groove #CCCCCC; border-top:1px solid #999999; border-left:1px solid #999999;">
+<table border=0 cellspacing=0>
+<tr><td id="mainbg">
+
+<!-- ¥Ø¥Ã¥ÀÉôÊ¬¤ÎÄêµÁ -->
+<table cellspacing="0" width=100%>
+<tr>
+	<td id="headerl"><img src="<{$xoops_imageurl}>imagens/logo.png">&nbsp;</td>
+		<form action="<{$xoops_url}>/search.php" method="get">
+	<td id="headerr">
+		<img src="<{$xoops_imageurl}>imagens/dot.png" width=10 height=10><br>
+		<input type="text" name="query" size="20"/>
+		<input type="hidden" name="action" value="results" />
+		<input type="submit" name="searchSubmit" value="Pesquisar" />
+		<img src="<{$xoops_imageurl}>imagens/dot.png" width=10 height=10>
+</td>
+		</form>
+</tr>
+</table>
+
+<!-- ¥Ø¥Ã¥ÀÉôÊ¬½ª¤ï¤ê -->
+<img src="<{$xoops_imageurl}>imagens/dot.png" width=8 height=8><br>
+
+<table cellspacing="0">
+<tr><td width="170">
+
+<{foreach item=block from=$xoops_lblocks}>
+
+<table cellspacing="0" cellpadding="2" width="100%">
+<tr>
+<!-- º¸Â¦¥Ö¥í¥Ã¥¯¾åÊÕÉôÊ¬ -->
+<td><img src="<{$xoops_imageurl}>imagens/corktl.png"></td>
+<td id="topc" width="100%"></td>
+<td><img src="<{$xoops_imageurl}>imagens/corktr.png"></td>
+</tr>
+
+<!-- º¸Â¦¥Ö¥í¥Ã¥¯ÉôÊ¬ -->
+<tr>
+<td id="midl"></td>
+<td id="midc" width="100%">
+<div class="title"><{$block.title}></div>
+<div class="content"><{$block.content}></div>
+</td>
+<td id="midr"></td>
+</tr>
+
+<!-- º¸Â¦¥Ö¥í¥Ã¥¯²¼ÊÕÉôÊ¬ -->
+<tr>
+<td><img src="<{$xoops_imageurl}>imagens/corkbl.png"></td>
+<td id="botc" width="100%"></td>
+<td><img src="<{$xoops_imageurl}>imagens/corkbr.png"><br></td>
+</tr>
+</table>
+<img src="<{$xoops_imageurl}>imagens/dot.png" width=5 height=5><br>
+<{/foreach}>
+
+</td>
+
+<td id="centercolumn">
+
+<!-- Display center blocks if any -->
+<{if $xoops_showcblock == 1}>
+
+<!-- Ãæ±û-Ãæ±û¥Ö¥í¥Ã¥¯ÉôÊ¬¤ÎÄêµÁ -->
+<{foreach item=block from=$xoops_ccblocks}>
+
+	<table cellspacing="0">
+	<tr>
+	<td><img src="<{$xoops_imageurl}>imagens/corktl.png"></td>
+	<td id="topc" width="100%"></td>
+	<td><img src="<{$xoops_imageurl}>imagens/corktr.png"></td>
+	</tr>
+
+	<tr>
+	<td id="midl"></td>
+	<td id="midc" width="100%">
+	<div class="title"><{$block.title}></div>
+	<div class="content"><{$block.content}></div>
+	</td>
+	<td id="midr"></td>
+	</tr>
+
+	<tr>
+	<td><img src="<{$xoops_imageurl}>imagens/corkbl.png"></td>
+	<td id="botc" width="100%"></td>
+	<td><img src="<{$xoops_imageurl}>imagens/corkbr.png"><br></td>
+	</tr>
+	</table>
+<img src="<{$xoops_imageurl}>imagens/dot.png" width=5 height=5><br>
+<{/foreach}>
+
+<!-- Ãæ±û-Ãæ±û¥Ö¥í¥Ã¥¯ÉôÊ¬½ª¤ï¤ê -->
+
+<!-- Ãæ±û-º¸¥Ö¥í¥Ã¥¯ÉôÊ¬¤ÎÄêµÁ -->
+<table cellspacing=0 cellpadding=0>
+<tr><td>
+
+<{foreach item=block from=$xoops_clblocks}>
+<table cellspacing=0 cellpadding=0>
+<tr>
+<td><img src="<{$xoops_imageurl}>imagens/corktl.png"></td>
+<td id="topc" width="100%"></td>
+<td><img src="<{$xoops_imageurl}>imagens/corktr.png"></td>
+</tr>
+
+<tr>
+<td id="midl"></td>
+<td id="midc" width="100%">
+<div class="title"><{$block.title}></div>
+<div class="content"><{$block.content}></div>
+</td>
+<td id="midr"></td>
+</tr>
+
+<tr>
+<td><img src="<{$xoops_imageurl}>imagens/corkbl.png"></td>
+<td id="botc" width="100%"></td>
+<td><img src="<{$xoops_imageurl}>imagens/corkbr.png"><br></td>
+</tr>
+</table>
+<{/foreach}>
+
+</td>
+<!-- Ãæ±û-º¸¥Ö¥í¥Ã¥¯ÉôÊ¬½ª¤ï¤ê -->
+
+<!-- Ãæ±û-±¦¥Ö¥í¥Ã¥¯ÉôÊ¬¤ÎÄêµÁ -->
+<td id="centerRcolumn">
+<{foreach item=block from=$xoops_crblocks}>
+<table cellspacing=0 cellpadding=0>
+<tr>
+<td><img src="<{$xoops_imageurl}>imagens/corktl.png"></td>
+<td id="topc" width="100%"></td>
+<td><img src="<{$xoops_imageurl}>imagens/corktr.png"></td>
+</tr>
+
+<tr>
+<td id="midl"></td>
+<td id="midc" width="100%">
+<div class="title"><{$block.title}></div>
+<div class="content"><{$block.content}></div>
+</td>
+<td id="midr"></td>
+</tr>
+
+<tr>
+<td><img src="<{$xoops_imageurl}>imagens/corkbl.png"></td>
+<td id="botc" width="100%"></td>
+<td><img src="<{$xoops_imageurl}>imagens/corkbr.png"><br></td>
+</tr>
+</table>
+<{/foreach}>
+
+</td></tr>
+</table>
+<!-- Ãæ±û-±¦¥Ö¥í¥Ã¥¯ÉôÊ¬½ª¤ï¤ê -->
+
+<{/if}>
+<!-- End display center blocks -->
+
+<div id="content">
+<{$xoops_contents}>
+</div>
+</td>
+
+      <{if $xoops_showrblock == 1}>
+
+<!-- ±¦¥Ö¥í¥Ã¥¯ÉôÊ¬¤ÎÄêµÁ -->
+<td id="rightcolumn">
+        <{foreach item=block from=$xoops_rblocks}>
+
+<table cellspacing="0" cellpadding="2" width="100%">
+<tr>
+<td><img src="<{$xoops_imageurl}>imagens/corktl.png"></td>
+<td id="topc" width="100%"></td>
+<td><img src="<{$xoops_imageurl}>imagens/corktr.png"></td>
+</tr>
+
+<tr>
+<td id="midl"></td>
+<td id="midc" width="100%">
+<div class="title"><{$block.title}></div>
+<div class="content"><{$block.content}></div>
+</td>
+<td id="midr"></td>
+</tr>
+
+<tr>
+<td><img src="<{$xoops_imageurl}>imagens/corkbl.png"></td>
+<td id="botc" width="100%"></td>
+<td><img src="<{$xoops_imageurl}>imagens/corkbr.png"><br></td>
+</tr>
+</table>
+<img src="<{$xoops_imageurl}>imagens/dot.png" width=5 height=5><br>
+<{/foreach}>
+
+</td>
+<!-- ±¦¥Ö¥í¥Ã¥¯ÉôÊ¬½ª¤ï¤ê -->
+
+<{/if}>
+
+</tr>
+</table>
+
+<hr style="width:95%;border:3px dotted #FFFFFF;">
+<!-- Rodapé  -->
+<div align=center style="font-size:12px;line-height:130%;color:#FFFFFF;">
+<{$xoops_footer}>
+</div>
+<br>
+<!-- FIM -->
+
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
